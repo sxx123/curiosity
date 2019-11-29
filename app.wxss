@@ -1,0 +1,13 @@
+page{
+  width: 100%;
+  height: 100%;
+}
+.container{
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background:url('http://pics.jiuziran.com/FqxPydVt0rCt-wtJzxyM9BHUELPz') no-repeat;
+  background-size:cover;
+}

@@ -1,0 +1,57 @@
+<view class="container" style="height:{{pageHeight}}px">
+  <view class="weatherInfo">
+    <!-- <view class="infoList">
+      <text class="txt">西安</text>
+      <image class="adIcon" src="http://pics.jiuziran.com/FpTrn0MmUTlJLCFHPf3BbZqwirKt"></image>
+    </view> -->
+    
+      <text class="tempone">21°</text>
+      <text class="weather">有雾</text>
+  </view>
+  <!-- <view class="search">
+    <image class="sousuo" bind:search="searchAddressOnCity" bind:change="inputKeyWord" value="{{ keyWord }}" src="http://pics.jiuziran.com/Fm1BMv8gd2qmgFckIn8S74zCgw59"></image>
+    <input placeholder="请输入商品名称" value="{{val}}" bindconfirm='tapSearch' />
+  </view>
+  <view class="showBox" >
+    <view class="wright">
+      <text>所在城市：</text>
+      <text>{{city}}</text>
+    </view>
+    <view class="wright">
+      <text>查询时间：</text>
+      <text>{{ymd}}（{{week}}）</text>
+    </view>
+    <view class="wright">
+      <text>今日天气：</text>
+      <text>{{temperature}}（{{weather}}）</text>
+    </view>
+    <view class="wright">
+      <text>穿衣指数：</text>
+      <text>{{dressing_index}}</text>
+    </view>
+    <view class="wright">
+      <text>穿衣建议：</text>
+      <text>{{dressing_advice}}</text>
+    </view>
+    <view class="wright">
+      <text>紫外线强度：</text>
+      <text>{{uv_index}}</text>
+    </view>
+    <view class="wright">
+      <text>洗车指数：</text>
+      <text>{{wash_index}}</text>
+    </view>
+    <view class="wright">
+      <text>旅游指数：</text>
+      <text>{{travel_index}}</text>
+    </view>
+    <view class="wright">
+      <text>晨练指数：</text>
+      <text>{{exercise_index}}</text>
+    </view>
+  </view>
+  <view class="lookwl" bindtap="goSeven">
+    <text>查看未来七天天气状况</text>
+    <image src="https://jiupintuan-eefc60.tcb.qcloud.la/right.png?sign=8ec1a38c4f2ef3d3fbca81a5e0a587a0&t=1536805687"></image>
+  </view> -->
+</view>

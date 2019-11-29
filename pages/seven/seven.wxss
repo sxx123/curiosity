@@ -1,0 +1,76 @@
+/* 搜索框 */
+.search {
+  width: 100%;
+  height: 108rpx;
+  display: flex;
+  position: relative;
+  align-items: center; 
+}
+
+.sousuo {
+  width: 35rpx;
+  height: 35rpx;
+  position: absolute;
+  top: 36rpx;
+  left: 64rpx;
+  vertical-align: middle;
+}
+
+input {
+  width: 702rpx;
+  height: 64rpx;
+  font-size: 28rpx;
+  padding-left: 76rpx;
+  box-sizing: border-box;
+  color: #999;
+  margin-left: 16px;
+  background: #F9F9F9;
+ border-radius: 17px;
+}
+.showBox{
+  width: 100%;
+  height: auto;
+  /* background: rgb(255, 255, 255, .7); */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 38rpx;
+  box-sizing: border-box;
+  margin-top: 20rpx;
+}
+.wright{
+  height: auto;
+  display: flex;
+  margin-bottom: 20rpx;
+}
+.wright text{
+font-size: 30rpx;
+color: #000;
+font-weight: 600;
+width: 26%;
+}
+.wright text:last-child{
+font-size: 28rpx;
+color: #000;
+font-weight: 400;
+width: 74%;
+}
+.lookwl{
+  width: 100%;
+  height: auto;
+  padding:0 32rpx;
+  box-sizing: border-box;
+  margin-top: 50rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.lookwl text{
+  font-size: 36rpx;
+  color: #000;
+  font-weight: 600;
+}
+.lookwl image{
+  width: 36rpx;
+  height: 36rpx;
+}
