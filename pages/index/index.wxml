@@ -1,29 +1,41 @@
-<view class="container" style="height:{{pageHeight}}px">
+<scroll-view class="scroll"  scroll-y="{{true}}" style="width:100%;height:{{pageHeight}}px;">
+<view class="container">
   <view class="weatherInfo">
-    <!-- <view class="infoList">
-      <text class="txt">西安</text>
+      <view class="wdBox">
+        <text class="tempone">{{temp}}</text>
+        <image src="../../img/wd.png"></image>
+      </view>
+      <text class="weather">{{weather}}</text>
+      <text class="fTime">{{wind_direction}}/{{wind_strength}}<text class="currtime">{{time}}<text style="font-size:23rpx;margin-left:10rpx;">(更新)</text></text>  </text>
+    <view class="infoList" bindtap="currAddress">
+      <text class="txt">{{city}}</text>
       <image class="adIcon" src="http://pics.jiuziran.com/FpTrn0MmUTlJLCFHPf3BbZqwirKt"></image>
-    </view> -->
-    
-      <text class="tempone">21°</text>
-      <text class="weather">有雾</text>
+    </view>
   </view>
-  <!-- <view class="search">
-    <image class="sousuo" bind:search="searchAddressOnCity" bind:change="inputKeyWord" value="{{ keyWord }}" src="http://pics.jiuziran.com/Fm1BMv8gd2qmgFckIn8S74zCgw59"></image>
-    <input placeholder="请输入商品名称" value="{{val}}" bindconfirm='tapSearch' />
+  <view class="ftureWeather">
+    <view class="ftureTitle">
+      <image class="lookIcon" src="../../img/look.png"></image>
+      <text class="fture">未来七天天气状况：</text>
+    </view>
+    <view class="fturelist">
+      <view class="list" wx:for="{{inforList}}">
+        <text class="week">{{item.week}}</text>
+        <view class="tqBox">
+          <image class="tqIcon" src="{{item.weatherIcon}}"></image>
+        </view>
+        <text class="wenDu">{{item.temperature}}/{{item.weather}}</text>
+        <text>{{item.wind}}</text>
+      </view>
+    </view>
   </view>
   <view class="showBox" >
     <view class="wright">
-      <text>所在城市：</text>
-      <text>{{city}}</text>
-    </view>
-    <view class="wright">
-      <text>查询时间：</text>
+      <text>今日月份：</text>
       <text>{{ymd}}（{{week}}）</text>
     </view>
     <view class="wright">
-      <text>今日天气：</text>
-      <text>{{temperature}}（{{weather}}）</text>
+      <text>实际温度</text>
+      <text>{{temperature}}</text>
     </view>
     <view class="wright">
       <text>穿衣指数：</text>
@@ -50,8 +62,5 @@
       <text>{{exercise_index}}</text>
     </view>
   </view>
-  <view class="lookwl" bindtap="goSeven">
-    <text>查看未来七天天气状况</text>
-    <image src="https://jiupintuan-eefc60.tcb.qcloud.la/right.png?sign=8ec1a38c4f2ef3d3fbca81a5e0a587a0&t=1536805687"></image>
-  </view> -->
 </view>
+</scroll-view>

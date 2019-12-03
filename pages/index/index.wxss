@@ -12,6 +12,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 88rpx;
 }
 .infoList .txt{
   font-family: PingFangSC-Regular;
@@ -23,56 +24,106 @@
   height: 36rpx;
   margin: 10rpx 0 0 10rpx;
 }
-.weatherInfo .weather{
-  font-family: PingFangSC-Regular;
-  font-size: 35rpx;
-  color: #eee;
-  margin-top: 20rpx;
+.wdBox{
+  width:210rpx;
+  height: auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.weatherInfo .tempone{
+.wdBox .tempone{
   display: flex;
   font-size: 120rpx;
   color: #fff;
   font-weight: 400;
 }
-
-
-
-
-
-/* 搜索框 */
-.search {
-  width: 100%;
-  height: 108rpx;
-  display: flex;
-  position: relative;
-  align-items: center; 
-}
-
-.sousuo {
-  width: 35rpx;
-  height: 35rpx;
+.wdBox image{
+  width: 50rpx;
+  height: 50rpx;
   position: absolute;
-  top: 36rpx;
-  left: 64rpx;
-  vertical-align: middle;
+  top: 27rpx;
+  right: 0;
+  z-index: 10;
 }
-
-input {
-  width: 702rpx;
-  height: 64rpx;
-  font-size: 28rpx;
-  padding-left: 76rpx;
+ .weather{
+  font-family: PingFangSC-Regular;
+  font-size: 35rpx;
+  color: #eee;
+}
+.fTime{
+  font-family: PingFangSC-Regular;
+  font-size: 35rpx;
+  color: #eee;
+  margin-top: 20rpx;
+}
+.currtime{
+  margin-left: 20rpx;
+}
+.ftureWeather{
+  width: 100%;
+  height: auto;
+  padding: 32rpx;
   box-sizing: border-box;
-  color: #999;
-  margin-left: 16px;
-  background: #F9F9F9;
- border-radius: 17px;
+}
+.lookIcon{
+  width: 32rpx;
+  height: 32rpx;
+  margin-right: 14rpx;
+}
+.ftureTitle{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20rpx;
+}
+.fture{
+  font-family: PingFangSC-Regular;
+  font-size: 32rpx;
+  color: #2b2b2b;
+} 
+.fturelist{
+  width: 100%;
+  height: auto;
+}
+.list{
+  width: 100%;
+  height: 64rpx;
+  font-family: PingFangSC-Regular;
+  font-size: 35rpx;
+  color: #eee;
+  border-bottom: 0.5px solid #f5f5f5;
+  display: flex;
+}
+.list text{
+  display: flex;
+  font-size: 28rpx;
+  color: #eee;
+  align-items: center;
+  justify-content: center;
+}
+.list text:nth-child(1){
+  width: 20%;
+}
+.list text:nth-child(3){
+  width: 46%;
+}
+.list text:nth-child(4){
+  width: 24%;
+}
+.tqBox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tqIcon{
+  width: 50rpx;
+  height: 50rpx;
+  margin-right: 20rpx;
 }
 .showBox{
   width: 100%;
   height: auto;
-  /* background: rgb(255, 255, 255, .7); */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -85,14 +136,13 @@ input {
   margin-bottom: 20rpx;
 }
 .wright text{
-font-size: 30rpx;
-color: #000;
-font-weight: 600;
+font-size: 28rpx;
+color: #eee;
 width: 26%;
 }
 .wright text:last-child{
 font-size: 28rpx;
-color: #000;
+color: yellow;
 font-weight: 400;
 width: 74%;
 }

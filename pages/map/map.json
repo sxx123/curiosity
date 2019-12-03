@@ -1,0 +1,8 @@
+{
+  "usingComponents": {},
+  "navigationBarTitleText": "选择位置",
+  "window": {
+    "navigationStyle": "custom"
+  }
+  
+}

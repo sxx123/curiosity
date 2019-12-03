@@ -14,9 +14,9 @@ function apiRequest(url,data){
   })
 }
 module.exports={
-  searchAddress:function(val){
+  searchAddress: function (city){
     var data={
-      cityname:val,
+      cityname: city,
       key: app.globalData.MY_KEY,
     }
     console.log(data)

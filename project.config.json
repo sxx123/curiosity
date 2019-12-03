@@ -25,7 +25,7 @@
 		}
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.9.3",
+	"libVersion": "2.9.4",
 	"appid": "wxdbc7469fc0a83db4",
 	"projectname": "curiosity",
 	"debugOptions": {
