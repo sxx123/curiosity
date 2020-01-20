@@ -106,10 +106,10 @@
   width: 20%;
 }
 .list text:nth-child(3){
-  width: 46%;
+  width: 44%;
 }
 .list text:nth-child(4){
-  width: 24%;
+  width: 30%;
 }
 .tqBox{
   display: flex;

@@ -15,7 +15,7 @@
   <view class="ftureWeather">
     <view class="ftureTitle">
       <image class="lookIcon" src="../../img/look.png"></image>
-      <text class="fture">未来七天天气状况：</text>
+      <text class="fture" bindtap="a">未来七天天气状况：</text>
     </view>
     <view class="fturelist">
       <view class="list" wx:for="{{inforList}}">
